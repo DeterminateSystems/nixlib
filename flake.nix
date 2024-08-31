@@ -6,6 +6,7 @@
     test.oneChar = self.lib.str.capitalizeFirstCharacterAscii "a";
 
     lib = {
+      capitalizeFirstCharacterAscii = self.lib.str.capitalizeFirstCharacterAscii;
       str = {
         /* Capitalize the first chararacter of a string.
 
