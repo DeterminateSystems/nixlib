@@ -6,7 +6,17 @@
     test.oneChar = self.lib.str.capitalizeFirstCharacterAscii "a";
 
     lib = {
-      capitalizeFirstCharacterAscii = self.lib.str.capitalizeFirstCharacterAscii;
+      /* Capitalize the first chararacter of a string.
+
+        Type: capitalizeFirstCharacterAscii :: str -> str
+
+        Example:
+            nixlib.str.capitalizeFirstCharacterAscii "mystr"
+            => "Mystr"
+        */
+      capitalizeFirstCharacterAscii = # Input string to capitalize
+        string:
+        self.lib.str.capitalizeFirstCharacterAscii string;
       str = {
         /* Capitalize the first chararacter of a string.
 
