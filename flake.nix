@@ -4,6 +4,7 @@
     test.notLetter = self.lib.str.capitalizeFirstCharacterAscii "123abc";
     test.empty = self.lib.str.capitalizeFirstCharacterAscii "";
     test.oneChar = self.lib.str.capitalizeFirstCharacterAscii "a";
+    test.notLetterOrNumber = self.lib.str.capitalizeFirstCharacterAscii "_abc123";
 
     lib = {
       /* Capitalize the first chararacter of a string.
